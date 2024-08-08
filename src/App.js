@@ -4,6 +4,8 @@ import DashboardPage from './Components/Dashboard/DashboardPage';
 import LoginPage from './Components/LoginSignup/LoginPage';
 import Layout from './Components/Layout/Layout';
 import TaskForm from "./Components/TaskForm/TaskForm";
+import TeamPage from "./Components/Team/TeamPage";
+import ProjectsPage from "./Components/ProjectsPage/ProjectsPage";
 
 const App = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -32,6 +34,8 @@ const App = () => {
                 }>
                     <Route path="dashboard" element={<DashboardPage />} />
                     <Route path="taskform" element={<TaskForm />} />
+                    <Route path="teampage" element={<TeamPage />} />
+                    <Route path="projects" element={<ProjectsPage />} />
                     {/* diger sayfalar  */}
                 </Route>
                 <Route path="*" element={<Navigate to="/login" />} />
